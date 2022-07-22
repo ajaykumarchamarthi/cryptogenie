@@ -12,10 +12,9 @@ function Header() {
   const history = useHistory();
 
   return (
-    <Navbar bg="background-white" style={{ height: "88px" }}>
+    <Navbar bg="white" className="fixed-top">
       <Container fluid className="py-4 px-5">
         <Navbar.Brand
-          href="#home"
           className="d-flex justify-content-center align-items-center"
           onClick={() => history.replace("/")}
         >

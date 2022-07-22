@@ -27,7 +27,7 @@ function LandingPage() {
                 <div>
                   <button
                     type="button"
-                    className="border mt-5 bg-white border-0 text-primary px-4 py-3"
+                    className="border mt-5 bg-white border-0 text-primary px-5 py-3 fs-4"
                     onClick={() => history.replace("/")}
                   >
                     Go to CryptoGenie

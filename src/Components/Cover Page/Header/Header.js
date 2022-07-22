@@ -6,7 +6,7 @@ import YantrakaLogo from "./../../../assets cover/YantrakaLogoWhite.svg";
 
 function Header() {
   return (
-    <Navbar className="bg-primary py-4" expand="lg">
+    <Navbar className="bg-primary py-4 fixed-top" expand="lg">
       <Container fluid>
         <Navbar.Brand href="#home" className="text-white ps-5">
           <div className="d-flex justify-content-center align-items-center">
@@ -17,10 +17,10 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto pe-5">
-            <Nav.Link className="text-white pe-4" href="#home">
+            <Nav.Link className="text-white pe-4" href="#products">
               Products
             </Nav.Link>
-            <Nav.Link className="text-white ps-3 pe-4" href="#link">
+            <Nav.Link className="text-white ps-3 pe-4" href="#career">
               Career
             </Nav.Link>
             <Nav.Link className="text-white ps-3 pe-4" href="#news">

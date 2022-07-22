@@ -9,7 +9,7 @@ import HeroPageRectangle from "../../../../assets/Illustartion.svg";
 
 function Hero() {
   return (
-    <Container fluid className="mb-5">
+    <Container fluid className="mb-5 mt-5 py-2 px-3">
       <Row className="d-flex justify-content-between mb-5">
         <Col lg={6} className="p-5">
           <div
@@ -28,7 +28,7 @@ function Hero() {
             </h6>
           </div>
 
-          <h1 className="fw-bolder display-3 lh-md mb-4">
+          <h1 className="fw-bolder display-3 lh-sm mb-4">
             CryptoGenie is a yantra which predicts the directional trend of
             select crypto assets
           </h1>

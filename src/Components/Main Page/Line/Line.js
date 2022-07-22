@@ -3,7 +3,7 @@ import Arrow from "../../../assets/Arrow.svg";
 
 function Line() {
   return (
-    <div className="w-100 m-0 p-0 border  border-bottom border-dark border-1 position-relative">
+    <div className="w-100 my-5 p-0 border  border-bottom border-dark border-1 position-relative">
       <img
         src={Arrow}
         className="position-absolute"
