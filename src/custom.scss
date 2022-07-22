@@ -1,5 +1,13 @@
 $primary: #6b38fd;
-$paragraph-font-family: "satoshi";
+$secondary: #6237de;
+$white: #fefefe;
+$faded: #f0f0f0;
+
+// $paragraph-font-family: "satoshi";
+
+.custom-element:hover {
+  border: 1px solid #6b38fd;
+}
 
 @import url("./css/satoshi.css");
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

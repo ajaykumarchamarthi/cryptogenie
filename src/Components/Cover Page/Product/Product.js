@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -10,6 +11,8 @@ import ComingSoon from "../../../assets cover/Coming Soon Banner.svg";
 import BannerCG from "../../../assets cover/Banner CG.svg";
 
 function Product() {
+  const history = useHistory();
+
   return (
     <Container className="mt-5 mb-5">
       <Row className="mt-5">
@@ -20,7 +23,11 @@ function Product() {
       </Row>
       <Row className="mt-5 mb-4">
         <Col lg={2} sm={12}>
-          <img src={CGLogo} alt="CG Logo" />
+          <img
+            src={CGLogo}
+            alt="CG Logo"
+            onClick={() => history.replace("/")}
+          />
         </Col>
         <Col lg={10}>
           <h3>CryptoGenie</h3>
@@ -35,6 +42,7 @@ function Product() {
               <button
                 type="button"
                 className="border border-0 bg-primary text-white py-3 px-4 mt-5"
+                onClick={() => history.replace("/")}
               >
                 Go to CryptoGenie
               </button>
@@ -77,6 +85,7 @@ function Product() {
                 <button
                   type="button"
                   className="border border-0 bg-primary text-white py-3 px-5 mt-lg-4"
+                  onClick={() => history.replace("/")}
                 >
                   Go to CryptoGenie
                 </button>

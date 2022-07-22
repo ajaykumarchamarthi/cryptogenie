@@ -12,7 +12,7 @@ function Header() {
   const history = useHistory();
 
   return (
-    <Navbar bg="light" style={{ height: "88px" }}>
+    <Navbar bg="background-white" style={{ height: "88px" }}>
       <Container fluid className="py-4 px-5">
         <Navbar.Brand
           href="#home"

@@ -18,7 +18,7 @@ function Pricing() {
   return (
     <Container
       fluid
-      className="d-flex d-flex flex-column justify-content-center px-5"
+      className="d-flex d-flex flex-column justify-content-center px-5 bg-background-faded"
       id="pricing"
     >
       <Stack direction="vertical" className="mx-auto">
@@ -32,7 +32,7 @@ function Pricing() {
       </Stack>
       <div className="mx-auto mt-5">Monthly plan & Annual</div>
 
-      <Container fluid style={{ marginTop: "40px" }}>
+      <Container fluid className="mt-5 mb-5">
         <Row className="d-flex justify-content-between">
           {pricingData.map((item) => {
             return (
@@ -84,7 +84,10 @@ function Pricing() {
                     })}
                   </ul>
 
-                  <button className="bg-primary border border-0 text-white mt-auto py-2 w-100">
+                  <button
+                    type="button"
+                    className="bg-secondary border border-0 px-4 py-3 text-white mt-auto w-100"
+                  >
                     {item.action}
                   </button>
                 </div>
@@ -94,32 +97,39 @@ function Pricing() {
         </Row>
       </Container>
 
-      <Container fluid style={{ margin: "190px 0", padding: "0 176px" }}>
-        <div className="d-flex justify-content-center position-relative  p-5">
-          <img src={TogeterImg} alt="togetherImage position-relative" />
-          <div className="position-absolute start-25">
+      <Container className="my-5">
+        <div className="position-relative my-5 p-0">
+          <img
+            src={TogeterImg}
+            alt="togetherImage"
+            className="img-fluid w-100"
+          />
+          <div className="position-absolute top-0 start-50">
             <img
               className="position-relative top-0 start-0 translate-middle"
               src={PriceSkewImg}
               alt="skewImage"
             />
-            <h5 className="position-absolute top-0 start-0 translate-middle">
+            <h5 className="position-absolute top-0 start-0  translate-middle">
               Together
             </h5>
           </div>
 
-          <h1 className="position-absolute mt-5 start-0 text-light">
-            Invest your money to the CryptoGenie and earn more money
+          <h1 className="position-absolute top-0 start-0 text-light p-5 fw-700">
+            Invest your money to the CryptoGenie <br /> and earn more money
           </h1>
-          <div className="position-absolute start-0 d-flex mt-5">
-            <button className="btn btn-primary px-4 py-3">
+          <div className="position-absolute top-50 d-flex p-5">
+            <button
+              type="button"
+              className="border border-0 bg-secondary px-4 py-3 text-white"
+            >
               Invest to CryptoGenie
             </button>
           </div>
         </div>
       </Container>
 
-      <Container fluid style={{ padding: "0 176px", marginBottom: "120px" }}>
+      <Container className="mt-5">
         <Row>
           <Col sm={12} lg={6}>
             <img
@@ -139,7 +149,10 @@ function Pricing() {
             <p className="mb-4">
               This will help you discern the trends per each crypto asset.
             </p>
-            <button className="btn border border-0 w-30 btn-primary px-4 py-2">
+            <button
+              type="button"
+              className="border border-0 bg-secondary px-4 py-3 text-white"
+            >
               Go to predictions
             </button>
           </Col>

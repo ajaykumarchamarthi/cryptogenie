@@ -4,9 +4,13 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+import { useHistory } from "react-router-dom";
+
 import "./LandingPage.css";
 
 function LandingPage() {
+  const history = useHistory();
+
   return (
     <section className="mb-5">
       <Header />
@@ -24,6 +28,7 @@ function LandingPage() {
                   <button
                     type="button"
                     className="border mt-5 bg-white border-0 text-primary px-4 py-3"
+                    onClick={() => history.replace("/")}
                   >
                     Go to CryptoGenie
                   </button>

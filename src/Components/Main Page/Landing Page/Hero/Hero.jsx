@@ -9,11 +9,11 @@ import HeroPageRectangle from "../../../../assets/Illustartion.svg";
 
 function Hero() {
   return (
-    <Container fluid>
-      <Row className="d-flex justify-content-between">
-        <Col lg={6} style={{ padding: "63px" }}>
+    <Container fluid className="mb-5">
+      <Row className="d-flex justify-content-between mb-5">
+        <Col lg={6} className="p-5">
           <div
-            className="position-relative mb-3"
+            className="position-relative mb-4"
             style={{
               height: "31.6px",
               width: "118px",
@@ -28,22 +28,20 @@ function Hero() {
             </h6>
           </div>
 
-          <h1 className="fw-bolder fs-1 lh-md mb-4">
+          <h1 className="fw-bolder display-3 lh-md mb-4">
             CryptoGenie is a yantra which predicts the directional trend of
             select crypto assets
           </h1>
 
-          <p
-            className="fs-5 fw-400 lh-sm"
-            style={{
-              width: "362.34px",
-            }}
-          >
+          <p className="fs-5 fw-400 lh-md w-50 text-muted">
             It uses advanced financial machine learning concepts and techniques
             to create models that generate predictive trends for crypto assets.
           </p>
 
-          <button className="btn btn-primary py-3 px-4 rounded-0 my-5">
+          <button
+            type="button"
+            className="bg-secondary border border-0 px-4 py-3 text-white my-5"
+          >
             Go to predictions
           </button>
 
@@ -66,13 +64,11 @@ function Hero() {
             </div>
           </div>
         </Col>
-        <Col lg={6}>
+        <Col lg={6} className="p-5">
           <img
             src={HeroPageRectangle}
             alt="hero-rectangle"
-            style={{
-              padding: "79.2px 63.36px 99px 0",
-            }}
+            className="w-100 img-fluid"
           />
         </Col>
       </Row>
