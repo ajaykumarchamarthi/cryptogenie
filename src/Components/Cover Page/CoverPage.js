@@ -6,11 +6,11 @@ import Footer from "./Footer/Footer";
 
 function CoverPage() {
   return (
-    <div>
+    <>
       <LandingPage />
       <Product />
       <Footer />
-    </div>
+    </>
   );
 }
 

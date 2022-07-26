@@ -14,10 +14,10 @@ function Product() {
   const history = useHistory();
 
   return (
-    <Container className="mt-5 mb-5">
+    <Container className="mt-5 mb-5" id="products">
       <Row className="mt-5">
         <div className="mb-4 mt-5">
-          <h3>Products</h3>
+          <h1 className="mt-5 mb-2 fw-bold">Products</h1>
         </div>
         <img src={ProductOutline} alt="Product Outline" />
       </Row>

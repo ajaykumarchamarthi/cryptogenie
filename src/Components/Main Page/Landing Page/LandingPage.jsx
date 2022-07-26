@@ -1,15 +1,13 @@
 import React from "react";
 import Header from "../Header/Header";
 import Hero from "./Hero/Hero";
-import Line from "../Line/Line";
 
 function LandingPage() {
   return (
-    <div id="Home">
+    <div id="home">
       <Header />
-      <hr className="m-0" />
+      <hr />
       <Hero />
-      <Line />
     </div>
   );
 }

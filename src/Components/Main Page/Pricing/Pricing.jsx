@@ -14,17 +14,17 @@ import TogeterImg from "../../../assets/Together.svg";
 import { pricingData } from "./Data/pricingData";
 import TrendPrediction from "../../../assets/Trend Prediction.svg";
 
+import "./Pricing.css";
+
 function Pricing() {
   return (
     <Container
       fluid
-      className="d-flex d-flex flex-column justify-content-center px-5 bg-background-faded"
+      className="d-flex d-flex flex-column justify-content-center px-5 bg-faded my-5"
       id="pricing"
     >
-      <Stack direction="vertical" className="mx-auto">
-        <h3 className="mx-auto" style={{ marginTop: "128px" }}>
-          Pricing
-        </h3>
+      <Stack direction="vertical" className="mx-auto mt-5">
+        <h1 className="mx-auto my-5 fw-bold">Pricing</h1>
         <p className="mt-4">
           It uses advanced financial machine learning concepts and techniques to
           create models that generate predictive trends for crypto assets.
@@ -38,7 +38,7 @@ function Pricing() {
             return (
               <Col sm={12} md={6} lg={3}>
                 <div
-                  className="me-5 p-4 pt-3 border b-2 b-dark d-flex flex-column align-items-center w-100"
+                  className="me-5 p-4 pt-3 border b-2 b-dark d-flex flex-column align-items-center w-100 borderHover"
                   style={{
                     height: "504px",
                     lineHeight: "24px",
@@ -129,7 +129,7 @@ function Pricing() {
         </div>
       </Container>
 
-      <Container className="mt-5">
+      <Container className="mt-5 mb-5">
         <Row>
           <Col sm={12} lg={6}>
             <img
