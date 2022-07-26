@@ -31,9 +31,7 @@ function Header() {
           <img src={LogoText} alt="logo-text" />
         </Navbar.Brand>
         <Nav className="ms-center">
-          <Nav.Link href="#home" className="me-5">
-            Home
-          </Nav.Link>
+          <Nav.Link className="me-5">Home</Nav.Link>
           <Nav.Link href="#features" className="me-5">
             Features
           </Nav.Link>
@@ -64,13 +62,14 @@ function Header() {
           </div>
         )}
         {isAuthenticated && (
-          <Dropdown className="px-2 py-1 border border-0">
+          <Dropdown className="px-1 py-1 border border-0 d-flex justify-content-center align-items-center">
             <Dropdown.Toggle variant="white" id="dropdown-basic">
               {user?.picture ? (
                 <img
                   src={user.picture}
                   alt="Profile Avatar"
                   height={24}
+                  width={24}
                   className="rounded-circle me-md-2"
                 />
               ) : (
@@ -78,12 +77,15 @@ function Header() {
                   src={Avatar}
                   alt="Profile Avatar"
                   height={24}
+                  width={24}
                   className="me-md-2"
                 />
               )}
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <Dropdown.Item>Settings</Dropdown.Item>
+              <Dropdown.Item onClick={() => history.push("/settings")}>
+                Settings
+              </Dropdown.Item>
               <Dropdown.Item onClick={() => logout()}>Logout</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>

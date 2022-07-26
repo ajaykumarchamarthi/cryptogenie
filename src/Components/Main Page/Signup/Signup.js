@@ -14,20 +14,7 @@ import LinkedIn from "../../../assets/Linkedin.svg";
 
 import { useFormik } from "formik";
 
-// import Signin from "../Signin/Signin";
-
 function Signup() {
-  // {
-  //   setSigninShow,
-  //   signinShow,
-  //   handleSigninClose,
-  //   handleSigninShow,
-  // }
-  // const signinModal = (event) => {
-  //   event.preventDefault();
-  //   setSigninShow(!signinShow);
-  // };
-
   const history = useHistory();
 
   const formik = useFormik({
@@ -169,21 +156,11 @@ function Signup() {
               <button
                 type="button"
                 className="btn d-inline border border-0 text-primary m-0  p-0 ms-1"
-                // onClick={signinModal}
               >
                 Signin
               </button>
             </div>
           </div>
-
-          {/* {signinShow && (
-              <Signin
-                signinShow={signinShow}
-                setSigninShow={setSigninShow}
-                handleSigninShow={handleSigninShow}
-                handleSigninClose={handleSigninClose}
-              />
-            )} */}
         </Col>
       </Row>
     </Container>
