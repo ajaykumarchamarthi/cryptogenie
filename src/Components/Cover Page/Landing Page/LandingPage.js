@@ -6,9 +6,11 @@ import Col from "react-bootstrap/Col";
 
 import { useHistory } from "react-router-dom";
 
+// import Contact from "../Contact/Contact";
+
 import "./LandingPage.css";
 
-function LandingPage() {
+function LandingPage({ show, handleClose, handleShow }) {
   const history = useHistory();
 
   return (

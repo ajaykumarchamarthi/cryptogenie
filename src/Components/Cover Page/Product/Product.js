@@ -10,7 +10,9 @@ import CGLogo from "../../../assets cover/CG Logo.svg";
 import ComingSoon from "../../../assets cover/Coming Soon Banner.svg";
 import BannerCG from "../../../assets cover/Banner CG.svg";
 
-function Product() {
+import Contact from "../Contact/Contact";
+
+function Product({ show, handleClose, handleShow }) {
   const history = useHistory();
 
   return (
@@ -71,6 +73,7 @@ function Product() {
               <button
                 type="button"
                 className="border border-0 bg-primary text-white py-3 px-4 mt-4"
+                onClick={handleShow}
               >
                 Request Demo
               </button>
@@ -92,6 +95,7 @@ function Product() {
               </div>
             </Col>
           </Row>
+          {show && <Contact handleClose={handleClose} show={show} />}
         </Col>
       </Row>
     </Container>

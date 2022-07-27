@@ -7,13 +7,14 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 
 import Profile from "./Profile/Profile";
+import UpgradePlan from "./Upgrade Plan/UpgradePlan";
 
 function Settings() {
   const [key, setKey] = useState("profile");
 
   return (
-    <section className="p-5 mt-5">
-      <Container fluid className="pt-4">
+    <section className="py-5 mt-5">
+      <Container className="pt-4">
         <h3 className="mb-4">Settings</h3>
         <Tabs
           id="controlled-tab-example"
@@ -24,7 +25,9 @@ function Settings() {
           <Tab eventKey="profile" title="Profile">
             <Profile />
           </Tab>
-          <Tab eventKey="upgradeplan" title="Upgrade Plan"></Tab>
+          <Tab eventKey="upgradeplan" title="Upgrade Plan">
+            <UpgradePlan />
+          </Tab>
         </Tabs>
       </Container>
     </section>

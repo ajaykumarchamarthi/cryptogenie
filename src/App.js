@@ -5,7 +5,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Signup from "./Components/Main Page/Signup/Signup";
 import MainPage from "./Components/Main Page/MainPage";
 
-// import CoverPage from "./Components/Cover Page/CoverPage";
+import CoverPage from "./Components/Cover Page/CoverPage";
 
 // Only Main Page
 import Header from "./Components/Main Page/Header/Header";
@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header />
       <Switch>
         <Route path="/" exact>
           <MainPage />
@@ -33,7 +33,8 @@ const App = () => {
         ) : (
           <Redirect to="/" />
         )}
-      </Switch>
+      </Switch> */}
+      <CoverPage />
     </>
   );
 };
