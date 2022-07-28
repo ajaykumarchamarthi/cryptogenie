@@ -1,14 +1,18 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
 
 import ProductOutline from "../../../assets cover/Product Outline.svg";
 import CGLogo from "../../../assets cover/CG Logo.svg";
 
 import ComingSoon from "../../../assets cover/Coming Soon Banner.svg";
 import BannerCG from "../../../assets cover/Banner CG.svg";
+
+import BannerCGMobile from "../../../assets cover/Banner CG Mobile.svg";
 
 import Contact from "../Contact/Contact";
 
@@ -24,7 +28,7 @@ function Product({ show, handleClose, handleShow }) {
         <img src={ProductOutline} alt="Product Outline" />
       </Row>
       <Row className="mt-5 mb-4">
-        <Col lg={2} sm={12}>
+        <Col lg={2} className="d-none d-md-block">
           <img
             src={CGLogo}
             alt="CG Logo"
@@ -33,7 +37,7 @@ function Product({ show, handleClose, handleShow }) {
         </Col>
         <Col lg={10}>
           <h3>CryptoGenie</h3>
-          <Row>
+          <Row className="d-flex flex-column flex-sm-row">
             <Col>
               <p>
                 An Automated Predictive Trading Platform for Cryptocurrencies,
@@ -41,13 +45,6 @@ function Product({ show, handleClose, handleShow }) {
                 techniques at the cutting edge of technology from state of the
                 art research papers
               </p>
-              <button
-                type="button"
-                className="border border-0 bg-primary text-white py-3 px-4 mt-5"
-                onClick={() => history.replace("/")}
-              >
-                Go to CryptoGenie
-              </button>
             </Col>
             <Col>
               <p>
@@ -57,10 +54,21 @@ function Product({ show, handleClose, handleShow }) {
                 data ingestion, to model training, validation and trading.
               </p>
             </Col>
+          </Row>
+          <Row>
+            <Col sm={5}>
+              <button
+                type="button"
+                className="border border-0 bg-primary text-white py-3 px-4 mt-5 w-100 w-sm-auto"
+                onClick={() => history.replace("/")}
+              >
+                Go to CryptoGenie
+              </button>
+            </Col>
             <hr className="border-2 border-top border-dark mt-5" />
           </Row>
-          <Row className="mt-5 mb-5">
-            <Col>
+          <Row className="mt-5 mb-5 d-flex flex-column flex-md-row">
+            <Col className="mb-5 mb-md-0">
               <img
                 className="d-block w-100 mb-5"
                 src={ComingSoon}
@@ -78,21 +86,51 @@ function Product({ show, handleClose, handleShow }) {
                 Request Demo
               </button>
             </Col>
-            <Col className="position-relative">
-              <img className="d-block w-100" src={BannerCG} alt="CG banner" />
-              <div className="position-absolute top-50 px-5">
-                <h2 className="mb-3 text-white fw-900 lh-lg">
-                  Trade more effectively with our Cryptocurrencies trend
-                  predictions.
-                </h2>
-                <button
-                  type="button"
-                  className="border border-0 bg-primary text-white py-3 px-5 mt-lg-4"
-                  onClick={() => history.replace("/")}
-                >
-                  Go to CryptoGenie
-                </button>
-              </div>
+            <Col>
+              <Card className="bg-dark text-white d-none d-sm-block rounded-0">
+                <Card.Img
+                  className="d-block w-100"
+                  src={BannerCG}
+                  alt="CG banner"
+                />
+                <Card.ImgOverlay>
+                  <div className="position-absolute top-50 translate-middle-y px-lg-5 px-1">
+                    <h2 className="mb-2 mb-lg-3 mt-sm-5 text-white fw-900 lh-md-md lh-lg-lg lh-sm-sm">
+                      Trade more effectively with our Cryptocurrencies trend
+                      predictions.
+                    </h2>
+                    <button
+                      type="button"
+                      className="border border-0 bg-primary text-white py-3 px-4 px-lg-5 mt-3 mt-lg-5"
+                      onClick={() => history.replace("/")}
+                    >
+                      Go to CryptoGenie
+                    </button>
+                  </div>
+                </Card.ImgOverlay>
+              </Card>
+              <Card className="bg-dark text-white d-block d-sm-none rounded-0">
+                <Card.Img
+                  className="d-block w-100"
+                  src={BannerCGMobile}
+                  alt="CG banner"
+                />
+                <Card.ImgOverlay>
+                  <div className="position-absolute top-50 translate-middle-y px-3">
+                    <h2 className="mb-5 text-white fw-900 lh-lg">
+                      Trade more effectively with our Cryptocurrencies trend
+                      predictions.
+                    </h2>
+                    <button
+                      type="button"
+                      className="border border-0 bg-primary text-white py-3 px-4 w-100"
+                      onClick={() => history.replace("/")}
+                    >
+                      Go to CryptoGenie
+                    </button>
+                  </div>
+                </Card.ImgOverlay>
+              </Card>
             </Col>
           </Row>
           {show && <Contact handleClose={handleClose} show={show} />}
