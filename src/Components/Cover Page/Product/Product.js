@@ -20,7 +20,7 @@ function Product({ show, handleClose, handleShow }) {
   const history = useHistory();
 
   return (
-    <Container className="mt-5 mb-5" id="products">
+    <Container className="mt-5 mb-3 mb-md-5" id="products">
       <Row className="mt-5">
         <div className="mb-4 mt-5">
           <h1 className="mt-5 mb-2 fw-bold">Products</h1>
@@ -67,7 +67,7 @@ function Product({ show, handleClose, handleShow }) {
             </Col>
             <hr className="border-2 border-top border-dark mt-5" />
           </Row>
-          <Row className="mt-5 mb-5 d-flex flex-column flex-md-row">
+          <Row className="mt-5 mb-md-5 d-flex flex-column flex-md-row">
             <Col className="mb-5 mb-md-0">
               <img
                 className="d-block w-100 mb-5"

@@ -9,7 +9,7 @@ import HeroPageRectangle from "../../../../assets/Illustartion.svg";
 
 function Hero() {
   return (
-    <Container fluid className="mb-5 mt-5 py-2 px-3">
+    <Container fluid className="mb-5 mt-5 py-2 px-1 px-lg-3">
       <Row className="d-flex justify-content-between mb-5">
         <Col lg={6} className="p-5">
           <div
@@ -33,7 +33,7 @@ function Hero() {
             select crypto assets
           </h1>
 
-          <p className="fs-5 fw-400 lh-md w-50 text-muted">
+          <p className="fs-5 fw-400 lh-md w-md-75 w-lg-50 text-muted">
             It uses advanced financial machine learning concepts and techniques
             to create models that generate predictive trends for crypto assets.
           </p>
@@ -45,20 +45,20 @@ function Hero() {
             Go to predictions
           </button>
 
-          <div className="hstack" style={{ width: "440.55px" }}>
-            <div className="vstack">
+          <div className="d-flex">
+            <div>
               <h6 className="fw-bolder">30 minutes</h6>
               <p>New analytical result</p>
             </div>
 
             <div
-              className="mx-5"
+              className="mx-3 mx-lg-5"
               style={{
                 height: "55px",
                 borderLeft: "1px solid black",
               }}
             ></div>
-            <div className="vstack">
+            <div>
               <h6 className="fw-bolder">High prediction accuracy</h6>
               <p>A new level AI</p>
             </div>

@@ -1,5 +1,5 @@
 import React from "react";
-// import LandingPage from "./Landing Page/LandingPage";
+import LandingPage from "./Landing Page/LandingPage";
 import Hero from "./Landing Page/Hero/Hero";
 import Features from "./Features/Features";
 import Pricing from "./Pricing/Pricing";
@@ -9,7 +9,8 @@ import Line from "./Line/Line";
 function MainPage() {
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
+      <LandingPage />
       <Line />
       <Features />
       <Line />

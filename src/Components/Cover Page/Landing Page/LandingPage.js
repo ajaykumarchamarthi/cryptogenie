@@ -19,8 +19,8 @@ function LandingPage({ show, handleClose, handleShow }) {
       <Container fluid className="cover">
         <Container className="img_overlay">
           <Row className="p-0 m-0">
-            <Col lg={8} md={7} sm={12} className="p-5">
-              <div className="ps-5 mt-5">
+            <Col md={8} className="ps-5 pe-2 py-5 p-lg-5">
+              <div className="ps-lg-5 mt-5">
                 <h1 className="text-white fw-700">
                   Yantraka.ai designs and develops products in Fintech, Energy
                   and Retail domains using advanced Artificial Intelligence &

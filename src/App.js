@@ -11,6 +11,8 @@ import CoverPage from "./Components/Cover Page/CoverPage";
 import Header from "./Components/Main Page/Header/Header";
 import Settings from "./Components/Main Page/Settings/Settings";
 
+import TrendPrediction from "./Components/Main Page/Trend Prediction/TrendPrediction";
+
 const App = () => {
   const { user, isAuthenticated } = useAuth0();
 
@@ -18,13 +20,19 @@ const App = () => {
 
   return (
     <>
-      {/* <Header />
+      <Header />
       <Switch>
         <Route path="/" exact>
           <MainPage />
         </Route>
+        <Route path="/coverpage">
+          <CoverPage />
+        </Route>
         <Route path="/signup">
           <Signup />
+        </Route>
+        <Route path="/trendprediction">
+          <TrendPrediction />
         </Route>
         {isAuthenticated ? (
           <Route path="/settings">
@@ -33,8 +41,8 @@ const App = () => {
         ) : (
           <Redirect to="/" />
         )}
-      </Switch> */}
-      <CoverPage />
+      </Switch>
+      {/* <CoverPage /> */}
     </>
   );
 };

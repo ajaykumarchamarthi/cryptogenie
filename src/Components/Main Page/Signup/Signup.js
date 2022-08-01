@@ -35,7 +35,7 @@ function Signup() {
   return (
     <Container fluid>
       <Row>
-        <Col className="d-none d-xl-block col-lg-4 position-relative p-0">
+        <Col lg={4} className="d-none d-xl-block position-relative p-0">
           <img
             src={SignupIllustration}
             alt="signup-illustration"
@@ -50,7 +50,10 @@ function Signup() {
           </button>
         </Col>
 
-        <Col className="col-12 col-lg-8 d-lg-flex justify-content-lg-center align-items-lg-center">
+        <Col
+          lg={8}
+          className="col-12  d-lg-flex justify-content-lg-center align-items-lg-center"
+        >
           <div className="p-2 w-lg-50">
             <h3>Sign Up</h3>
             <div className="d-flex gx-1 flex-lg-row flex-column justify-content-lg-between align-items-center mt-4 mb-2">

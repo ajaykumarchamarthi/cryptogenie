@@ -7,13 +7,13 @@ function Line() {
       <img
         src={Arrow}
         className="position-absolute"
-        style={{ top: "-6px", left: "62px" }}
+        style={{ top: "-6px", left: "20vw" }}
         alt="arrow"
       />
       <img
         src={Arrow}
         className="position-absolute"
-        style={{ top: "-6px", left: "430px" }}
+        style={{ top: "-6px", left: "50vw" }}
         alt="arrow"
       />
     </div>

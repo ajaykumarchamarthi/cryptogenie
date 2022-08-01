@@ -20,7 +20,7 @@ function Pricing() {
   return (
     <Container
       fluid
-      className="d-flex d-flex flex-column justify-content-center px-5 bg-faded my-5"
+      className="d-flex d-flex flex-column justify-content-center px-3 px-sm-5 bg-faded my-5"
       id="pricing"
     >
       <Stack direction="vertical" className="mx-auto mt-5">
@@ -129,9 +129,9 @@ function Pricing() {
         </div>
       </Container>
 
-      <Container className="mt-5 mb-5">
+      <Container className="my-5">
         <Row>
-          <Col sm={12} lg={6}>
+          <Col sm={12} lg={6} className="d-none d-sm-block">
             <img
               src={TrendPrediction}
               alt="Trend Prediction"
@@ -141,7 +141,7 @@ function Pricing() {
           <Col
             sm={12}
             lg={6}
-            className="d-flex flex-column justify-content-center align-items-start p-4"
+            className="d-flex flex-column justify-content-center align-items-start p-2 p-sm-4"
           >
             <h1 className="mb-4">
               Get trend predictions for crypto currencies at 30 min periods.
@@ -151,7 +151,7 @@ function Pricing() {
             </p>
             <button
               type="button"
-              className="border border-0 bg-secondary px-4 py-3 text-white"
+              className="border border-0 bg-secondary px-4 py-3 text-white w-sm-auto w-100"
             >
               Go to predictions
             </button>
