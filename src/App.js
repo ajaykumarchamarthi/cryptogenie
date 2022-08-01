@@ -9,6 +9,7 @@ import CoverPage from "./Components/Cover Page/CoverPage";
 
 // Only Main Page
 import Header from "./Components/Main Page/Header/Header";
+import Footer from "./Components/Main Page/Footer/Footer";
 import Settings from "./Components/Main Page/Settings/Settings";
 
 import TrendPrediction from "./Components/Main Page/Trend Prediction/TrendPrediction";
@@ -33,6 +34,7 @@ const App = () => {
         </Route>
         <Route path="/trendprediction">
           <TrendPrediction />
+          <Footer />
         </Route>
         {isAuthenticated ? (
           <Route path="/settings">

@@ -1,0 +1,25 @@
+.predictContainer {
+  background-color: #f7f8f9 !important;
+}
+
+.resultCard {
+  background-color: #fff !important;
+}
+
+.result {
+  background-color: #eef1f4 !important;
+}
+
+.lastResultCard {
+  background-color: #fff !important;
+  border: 2px solid black;
+  -webkit-box-shadow: -6px -4px 0px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -6px -4px 0px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -6px -4px 0px 0px rgba(0, 0, 0, 0.75);
+  scale: (1.1);
+}
+
+.overflow {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
