@@ -5,7 +5,7 @@ import Warning from "./assets/Warning.svg";
 
 function TrendPrediction() {
   return (
-    <section className="my-5 p-5">
+    <section className="my-5 p-2 p-sm-5">
       <div className="my-5 d-flex justify-content-between">
         <h3>Trend Predictions</h3>
         <h3>Filter</h3>
