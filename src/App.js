@@ -8,9 +8,9 @@ import MainPage from "./Components/Main Page/MainPage";
 import CoverPage from "./Components/Cover Page/CoverPage";
 
 // Only Main Page
-import Header from "./Components/Main Page/Header/Header";
-import Footer from "./Components/Main Page/Footer/Footer";
+import Layout from "./Components/Main Page/Layout/Layout";
 import Settings from "./Components/Main Page/Settings/Settings";
+import Prediction from "./Components/Main Page/Prediction/Prediction";
 
 import TrendPrediction from "./Components/Main Page/Trend Prediction/TrendPrediction";
 
@@ -21,10 +21,11 @@ const App = () => {
 
   return (
     <>
-      <Header />
       <Switch>
         <Route path="/" exact>
-          <MainPage />
+          <Layout>
+            <MainPage />
+          </Layout>
         </Route>
         <Route path="/coverpage">
           <CoverPage />
@@ -33,18 +34,26 @@ const App = () => {
           <Signup />
         </Route>
         <Route path="/trendprediction">
-          <TrendPrediction />
-          <Footer />
+          <Layout>
+            <TrendPrediction />
+          </Layout>
         </Route>
+        <Route path="/prediction">
+          <Layout>
+            <Prediction />
+          </Layout>
+        </Route>
+
         {isAuthenticated ? (
           <Route path="/settings">
-            <Settings />
+            <Layout>
+              <Settings />
+            </Layout>
           </Route>
         ) : (
           <Redirect to="/" />
         )}
       </Switch>
-      {/* <CoverPage /> */}
     </>
   );
 };

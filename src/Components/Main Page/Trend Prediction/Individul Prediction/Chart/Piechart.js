@@ -1,7 +1,7 @@
 import React from "react";
 import { PieChart, Pie } from "recharts";
 
-function Piechart({ title, val }) {
+function Piechart({ title, val, customClass }) {
   console.log("Title -", title, "Value -", val);
 
   const data = [

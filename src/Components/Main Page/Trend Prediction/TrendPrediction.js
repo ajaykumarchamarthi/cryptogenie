@@ -5,7 +5,7 @@ import Warning from "./assets/Warning.svg";
 
 function TrendPrediction() {
   return (
-    <section className="my-5 p-2 p-sm-5">
+    <section className="my-5 px-2 py-5 p-sm-5">
       <div className="my-5 d-flex justify-content-between">
         <h3>Trend Predictions</h3>
         <h3>Filter</h3>
@@ -15,8 +15,8 @@ function TrendPrediction() {
       <Prediction />
       <Prediction />
 
-      <div className="mt-5 border border-2 border-dark d-flex p-4">
-        <img src={Warning} className="me-4" alt="Warning" />
+      <div className="mt-5 border border-2 border-dark d-flex flex-column flex-sm-row align-items-center px-3 py-4 p-sm-4 ">
+        <img src={Warning} className="me-sm-4 my-3 my-sm-0" alt="Warning" />
         <p className="fw-bold lh-md">
           This Site and the content therein is for information purposes only and
           is not intended to and does not provide tax, legal, insurance or

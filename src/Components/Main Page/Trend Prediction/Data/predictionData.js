@@ -9,7 +9,7 @@ import Uncertain from "../assets/Uncertain.svg";
 
 import Noaction from "../assets/Noaction.svg";
 
-const predictedStats = [
+export const predictedStats = [
   {
     title: "Correct Prediction",
     val: 302,

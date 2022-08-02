@@ -12,7 +12,8 @@
 
 .lastResultCard {
   background-color: #fff !important;
-  border: 2px solid black;
+  border: 1px solid black;
+  border-top: 3px solid black;
   -webkit-box-shadow: -6px -4px 0px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -6px -4px 0px 0px rgba(0, 0, 0, 0.75);
   box-shadow: -6px -4px 0px 0px rgba(0, 0, 0, 0.75);

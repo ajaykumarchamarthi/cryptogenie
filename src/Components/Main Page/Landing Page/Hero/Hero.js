@@ -3,11 +3,15 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+import { useHistory } from "react-router-dom";
+
 import SkewImg from "../../../../assets/Skewed Img.svg";
 
 import HeroPageRectangle from "../../../../assets/Illustartion.svg";
 
 function Hero() {
+  const history = useHistory();
+
   return (
     <Container fluid className="mb-5 mt-5 py-2 px-1 px-lg-3">
       <Row className="d-flex justify-content-between mb-5">
@@ -41,6 +45,7 @@ function Hero() {
           <button
             type="button"
             className="bg-secondary border border-0 px-4 py-3 text-white my-5"
+            onClick={() => history.replace("/trendprediction")}
           >
             Go to predictions
           </button>
